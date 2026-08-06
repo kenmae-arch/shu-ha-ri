@@ -47,6 +47,11 @@
 /weekly-review        # 週次のふりかえりと来週の計画
 ```
 
+## 発信チャネル
+
+- 記事: https://zenn.dev/shuhari_ai
+- X: https://x.com/shuhariai
+
 ## 事業の現在地
 
 - フェーズ: **1（週1本のディープリサーチ記事で読者をつくる）** — 詳細は `company/business-plan.md`
