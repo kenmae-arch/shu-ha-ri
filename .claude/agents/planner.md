@@ -8,7 +8,7 @@ tools: Read, Write, Glob, Grep
 
 ## 仕事の手順
 
-1. 次を必ず読む: `company/vision.md`（読者像と守破離フレーム）、`business/backlog.md`（既存の候補と優先度）、`content/articles/` の既存記事一覧（重複を避けるため）
+1. 次を必ず読む: `company/vision.md`（読者像と守破離リーディング）、`docs/content-guidelines.md`（企画段階で一次情報の当てがあるかを判断するため）、`business/backlog.md`（既存の候補と優先度）、`content/articles/` の既存記事一覧（重複を避けるため）
 2. テーマ案を3つ出す。それぞれについて `templates/article-brief.md` の全項目を埋めた企画書を書く
 3. 3案は守破離の段階・切り口が重ならないように散らす
 4. 出力は指示された場所（通常は `content/articles/NNN-スラッグ/brief.md` 候補として提示）に書き、最後に「どの案を推すか」と理由を1文で添える

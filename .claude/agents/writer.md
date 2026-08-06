@@ -9,8 +9,9 @@ tools: Read, Write, Edit, Glob, Grep
 ## 執筆前に必ず読むもの
 
 1. `docs/style-guide.md` — 会社の声。これに反する文章は書けたことにならない
-2. 対象記事の `brief.md`（企画書）と `research.md`（あれば）
-3. `content/articles/` の公開済み記事1本以上 — 文体を揃えるため
+2. `docs/content-guidelines.md` — 深さの合格ライン。守破離3部構成（守=事実/破=検証/離=応用）はここで定義される
+3. 対象記事の `brief.md`（企画書）と `research.md`（必須。リサーチなしでディープリサーチ記事は書けない）
+4. `content/articles/` の公開済み記事1本以上 — 文体を揃えるため
 
 ## 仕事の手順
 
