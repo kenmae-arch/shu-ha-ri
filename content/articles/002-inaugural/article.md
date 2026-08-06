@@ -37,13 +37,13 @@ status: レビュー待ち
 - 「どのモデルが最強か」→ **価格、セッション制限、コンテキストの挙動、ハーネス（AIを動かす作業環境）の設計、ワークフローの摩擦**
 - 熱狂と失望の二項対立 → **「AIスロップ（低価値な生成物の洪水）」への苛立ち**と、**「力の乗数としてのAI」**の明確な区別
 
-また、コーディングエージェントが生成したPull Requestを分析した研究では、「**どの単一エージェントも全タスクカテゴリで優位ではなく、ツールの質はタスクの形状に依存する**」という結果が報告されています。「最強のAIを選べば全部速くなる」という前提そのものが、データで否定され始めているわけです。
+また、7,156件のエージェント生成Pull Requestを分析し、5つのコーディングエージェントを比較した実証研究（arXiv:2607.21832）では、「**どの単一エージェントも全タスクカテゴリで優位ではなく、ツールの質はタスクの形状に依存する**」という結果が報告されています。「最強のAIを選べば全部速くなる」という前提そのものが、データで否定され始めているわけです。
 
 ## 破: この「2倍」は鵜呑みにしていいか
 
 ここからが検証です。「2倍」をそのまま新しい正解として持ち帰るのは、「10倍」を鵜呑みにするのと同じ失敗です。
 
-**限界1: 「2倍」は一人の実務者の見積もりであり、統一的な実測データではない。** エッセイの数字は著者の経験に基づく控えめな推定です。組織規模での査読付き研究（Microsoftが2026年初頭にClaude CodeとGitHub Copilot CLIを全社展開した事例の研究が話題になっています）も存在するようですが、こちらは単一情報源しか確認できず、本記事では詳細を扱いません。
+**限界1: 「2倍」は一人の実務者の見積もりであり、統一的な実測データではない。** エッセイの数字は著者の経験に基づく控えめな推定です。組織規模の研究も出始めており、Microsoftが2026年初頭にClaude CodeとGitHub Copilot CLIを全社展開した事例を分析した研究（arXiv:2607.01418）が話題ですが、プレプリントとみられ（査読の有無は未確認）、本記事では本文の直接確認ができていないため詳細には立ち入りません。続報で扱う予定です。
 
 **限界2: ベンダーの数字は逆方向を指している。** たとえばDeepSeekが2026-07-31に正式公開したV4-Flash-0731は、モデル本体を変えずポストトレーニング（事前学習済みモデルに対する追加調整の工程）の刷新だけで、エージェント系ベンチマークTerminal Bench 2.1のスコアを72.1から82.7へ引き上げたと報告しています（ベンダー自己報告）。数字だけ見れば「まだ伸びている」ようにも読めます。
 
@@ -69,12 +69,21 @@ status: レビュー待ち
 
 ## 出典（すべて2026-08-06確認）
 
-1. エッセイ本文: https://obryant.dev/p/2x-not-10x/
+一次情報:
+
+1. エッセイ原文: https://obryant.dev/p/2x-not-10x/
 2. Hacker Newsスレッド: https://news.ycombinator.com/item?id=49047839 （フロントページ1位は複数ソース一致。ポイント数は未確認）
-3. 2026年7月のHN論調分析: https://blog.mean.ceo/hacker-news-trends-july-2026/
-4. AIコーディングエージェント評価軸の分析: https://www.developersdigest.tech/blog/what-hacker-news-gets-right-about-ai-coding-agents-2026
-5. DeepSeek V4-Flash-0731の報道: https://www.marktechpost.com/2026/07/31/deepseek-upgrades-deepseek-v4-flash-0731-with-major-agentic-and-coding-gains/ （数値はベンダー自己報告）
-6. 同・公式ブログ: https://deepseek.ai/blog/deepseek-v4-flash-ga-agent-benchmarks
+3. エージェント生成PRの実証研究: https://arxiv.org/html/2607.21832v1 — "How Do AI Coding Agents Contribute to Software Development? An Empirical Study of Agentic Pull Requests"（AIDevデータセット、7,156 PR、5エージェント比較）
+4. Microsoft全社展開の研究: https://arxiv.org/abs/2607.01418 — "Adoption and Impact of Command-Line AI Coding Agents"（プレプリントとみられる）
+5. DeepSeek公式ブログ: https://deepseek.ai/blog/deepseek-v4-flash-ga-agent-benchmarks （数値はベンダー自己報告）
+
+二次情報（論調分析・報道）:
+
+6. 2026年7月のHN論調分析: https://blog.mean.ceo/hacker-news-trends-july-2026/
+7. AIコーディングエージェント評価軸の分析: https://www.developersdigest.tech/blog/what-hacker-news-gets-right-about-ai-coding-agents-2026
+8. DeepSeek V4-Flash-0731の報道: https://www.marktechpost.com/2026/07/31/deepseek-upgrades-deepseek-v4-flash-0731-with-major-agentic-and-coding-gains/
+
+※ 本記事の調査環境では外部ページの直接取得ができず、いずれも検索結果とその引用に基づき確認しています。arXiv論文2本は本文未確認のため、記述は要旨レベルにとどめています。
 
 ---
 
